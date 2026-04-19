@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Trae/VSCode settings (User specific)
+.vscode/
+*.code-workspace
+.DS_Store
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+
+# Personal Memory files (Prevent accidental upload of user data)
+**/Core/记忆/
+**/Core/记忆库.md
+**/Core/短期记忆.md
+**/*.bak.md
