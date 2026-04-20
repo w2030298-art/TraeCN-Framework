@@ -18,10 +18,6 @@ logs
 
 # User-specific memory
 Core/记忆/
-Core/config.json
-Core/health-check-simple.ps1
-Core/system-health-check.ps1
-Core/静默模式规则.md
 
 # User-specific data
 Evolve/
