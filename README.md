@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.3.0-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 核心理念
@@ -129,6 +129,12 @@ AI 助手将引导你完成：
 | `06-输出规范.md` | 代码风格、对话风格 |
 
 ## 更新日志
+
+### v1.3.0 (2026-04-21)
+
+- ✅ **全局钩子系统 (Global Hooks)**：引入 `pre-edit`, `post-build`, `on-error` 等自动化钩子，实现生命周期关键节点的自动触发。
+- ✅ **系统配置中心 (System Config)**：新增 `.trae/config.md`，支持对 Hooks、自愈机制和联想记忆进行全局一键开关（Master Switches）。
+- ✅ **自动化增强 (Automation Plus)**：Coordinator 现在会根据配置文件静默执行预处理任务，减少人工干预，提升开发连贯性。
 
 ### v1.2.0 (2026-04-21)
 
