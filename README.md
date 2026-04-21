@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.0.8-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 核心理念
@@ -15,6 +15,7 @@
 - **Skill 技能调度**：专业任务通过 `/指令` 触发对应 Skill，任务隔离
 - **Coordinator 模式**：主 Agent 负责任务拆解、生命周期管理和调度
 - **开放衍生**：框架是"活"的，可以自我进化
+- **感知先行 (Cascade Mode)**：2025 年主流 AI 编程新范式。实时监控 Linter 错误、终端输出和隐式意图，实现“问题未报，修复先行”的自愈闭环。
 
 ## 分层架构
 
@@ -128,6 +129,13 @@ AI 助手将引导你完成：
 | `06-输出规范.md` | 代码风格、对话风格 |
 
 ## 更新日志
+
+### v1.1.0 (2026-04-21)
+
+- ✅ **自愈闭环 (Self-Healing)**：引入核心工作流规范，强制执行“修改-诊断-修复-验证”闭环，禁止交付带错代码
+- ✅ **感知先行 (Cascade Mode)**：Coordinator 升级为主动感知模式，自动触发 Linter 诊断与终端报错分析
+- ✅ **架构代差演进**：参考 2025 主流 Agent (Cursor/Windsurf) 理念，从“指令响应式”进化为“意图感知式”
+- ✅ **规则层 2.0**：重构 00、02、05 号规则，确立自愈闭环与感知触发的法律地位
 
 ### v1.0.9 (2026-04-21)
 
