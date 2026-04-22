@@ -2,19 +2,19 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.3.5-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.3.6-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 文档导航
 
-- [文档总览](file:///e:/Agent/小Trae/docs/README.md)
-- [公开架构说明](file:///e:/Agent/小Trae/docs/architecture.md)
-- [版本管理说明](file:///e:/Agent/小Trae/docs/versioning.md)
-- [路线图](file:///e:/Agent/小Trae/docs/roadmap.md)
-- [发布检查清单](file:///e:/Agent/小Trae/docs/release-checklist.md)
-- [Release 文案模板](file:///e:/Agent/小Trae/docs/github-release-template.md)
-- [贡献指南](file:///e:/Agent/小Trae/CONTRIBUTING.md)
-- [更新日志](file:///e:/Agent/小Trae/CHANGELOG.md)
+- [文档总览](docs/README.md)
+- [公开架构说明](docs/architecture.md)
+- [版本管理说明](docs/versioning.md)
+- [路线图](docs/roadmap.md)
+- [发布检查清单](docs/release-checklist.md)
+- [Release 文案模板](docs/github-release-template.md)
+- [贡献指南](CONTRIBUTING.md)
+- [更新日志](CHANGELOG.md)
 
 ## 核心理念
 
@@ -154,6 +154,11 @@ AI 助手将引导你完成：
 
 ## 更新日志
 
+### v1.3.6 (2026-04-22)
+
+- ✅ **公开链接修复**：将公开文档中的本地路径链接改为 GitHub 兼容的相对路径。
+- ✅ **仓库可用性提升**：README、贡献指南、版本说明和发版清单现在可直接在 GitHub 页面点击跳转。
+
 ### v1.3.5 (2026-04-22)
 
 - ✅ **Issue 模板补齐**：新增 `bug report` 与 `feature request` 模板，统一问题反馈和需求收集入口。
@@ -273,8 +278,8 @@ AI 助手将引导你完成：
 ### 添加自定义 Skill
 
 1. 在 `Skills/` 目录创建新文件夹（如 `Skills/我的技能/`）
-2. 参考 [SKILL_TEMPLATE.md](file:///e:/Agent/小Trae/.trae/documents/SKILL_TEMPLATE.md) 创建 `SKILL.md` 文件。
-3. 也可以参考内置技能示例：[设计](file:///e:/Agent/小Trae/.trae/skills/设计/SKILL.md)。
+2. 参考 [SKILL_TEMPLATE.md](.trae/documents/SKILL_TEMPLATE.md) 创建 `SKILL.md` 文件。
+3. 也可以参考内置技能示例：[设计](.trae/skills/设计/SKILL.md)。
 
 ### 技能执行规范
 

@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented in this file.
 
+## [v1.3.6] - 2026-04-22
+
+### Fixed
+
+- Replaced local documentation links with GitHub-compatible relative links across public markdown files.
+
+### Changed
+
+- Updated `README.md`, `docs/README.md`, `docs/versioning.md`, `docs/release-checklist.md` and `CONTRIBUTING.md` to keep the public navigation usable on GitHub.
+
 ## [v1.3.5] - 2026-04-22
 
 ### Added

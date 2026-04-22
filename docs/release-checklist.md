@@ -34,7 +34,7 @@ git push origin v1.3.3
 - 列出新增能力与行为变化
 - 标注是否有目录调整、规则调整或协作方式调整
 - 如有迁移影响，补充升级说明
-- 发布前可直接套用 [github-release-template.md](file:///e:/Agent/小Trae/docs/github-release-template.md)
+- 发布前可直接套用 [github-release-template.md](github-release-template.md)
 
 ## 发版后
 
