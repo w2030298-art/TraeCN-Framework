@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.3.4-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.3.5-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 文档导航
@@ -10,6 +10,7 @@
 - [文档总览](file:///e:/Agent/小Trae/docs/README.md)
 - [公开架构说明](file:///e:/Agent/小Trae/docs/architecture.md)
 - [版本管理说明](file:///e:/Agent/小Trae/docs/versioning.md)
+- [路线图](file:///e:/Agent/小Trae/docs/roadmap.md)
 - [发布检查清单](file:///e:/Agent/小Trae/docs/release-checklist.md)
 - [Release 文案模板](file:///e:/Agent/小Trae/docs/github-release-template.md)
 - [贡献指南](file:///e:/Agent/小Trae/CONTRIBUTING.md)
@@ -152,6 +153,12 @@ AI 助手将引导你完成：
 | `06-输出规范.md` | 代码风格、对话风格 |
 
 ## 更新日志
+
+### v1.3.5 (2026-04-22)
+
+- ✅ **Issue 模板补齐**：新增 `bug report` 与 `feature request` 模板，统一问题反馈和需求收集入口。
+- ✅ **路线图建立**：新增 `v1.4.0` 路线图文档，明确后续版本的目标、边界和优先级。
+- ✅ **治理入口联动**：将模板与路线图接入 README、文档导航和贡献指南，形成需求到发版的闭环。
 
 ### v1.3.4 (2026-04-22)
 

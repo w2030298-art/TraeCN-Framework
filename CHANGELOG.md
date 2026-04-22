@@ -2,6 +2,18 @@
 
 All notable changes to this project are documented in this file.
 
+## [v1.3.5] - 2026-04-22
+
+### Added
+
+- Added `.github/ISSUE_TEMPLATE/bug_report.md` and `feature_request.md` to standardize defect and idea intake.
+- Added `.github/ISSUE_TEMPLATE/config.yml` to guide users toward the contribution guide and roadmap.
+- Added `docs/roadmap.md` to define the current `v1.4.0` direction and release boundary.
+
+### Changed
+
+- Updated `README.md`, `docs/README.md` and `CONTRIBUTING.md` to expose the roadmap and issue workflow.
+
 ## [v1.3.4] - 2026-04-22
 
 ### Added

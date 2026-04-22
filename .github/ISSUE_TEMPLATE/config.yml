@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution Guide
+    url: https://github.com/qShan1/TraeCN-Framework/blob/main/CONTRIBUTING.md
+    about: 查看贡献规范、目录边界和发版要求
+  - name: Roadmap
+    url: https://github.com/qShan1/TraeCN-Framework/blob/main/docs/roadmap.md
+    about: 查看下一阶段规划与优先级

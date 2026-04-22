@@ -6,6 +6,7 @@
 
 - [architecture.md](file:///e:/Agent/小Trae/docs/architecture.md)：对外公开的架构说明，描述五层结构、指令模型和设计原则。
 - [versioning.md](file:///e:/Agent/小Trae/docs/versioning.md)：版本管理规则，说明如何使用提交、标签、更新日志和发布版本。
+- [roadmap.md](file:///e:/Agent/小Trae/docs/roadmap.md)：版本路线图，记录下一阶段的目标、优先级和边界。
 - [release-checklist.md](file:///e:/Agent/小Trae/docs/release-checklist.md)：发版检查清单，统一版本更新、tag、推送和发布说明流程。
 - [github-release-template.md](file:///e:/Agent/小Trae/docs/github-release-template.md)：GitHub Release 文案模板，可直接复制后按版本替换占位内容。
 - [CONTRIBUTING.md](file:///e:/Agent/小Trae/CONTRIBUTING.md)：贡献规范，说明目录边界、提交习惯与协作要求。
@@ -26,6 +27,7 @@
 
 1. 先看 [README.md](file:///e:/Agent/小Trae/README.md) 了解项目定位。
 2. 再看 [architecture.md](file:///e:/Agent/小Trae/docs/architecture.md) 了解系统结构。
-3. 需要参与协作时看 [CONTRIBUTING.md](file:///e:/Agent/小Trae/CONTRIBUTING.md)。
-4. 需要跟踪演进时看 [CHANGELOG.md](file:///e:/Agent/小Trae/CHANGELOG.md)。
-5. 需要维护版本或发版时看 [versioning.md](file:///e:/Agent/小Trae/docs/versioning.md)、[release-checklist.md](file:///e:/Agent/小Trae/docs/release-checklist.md) 与 [github-release-template.md](file:///e:/Agent/小Trae/docs/github-release-template.md)。
+3. 需要了解下一阶段规划时看 [roadmap.md](file:///e:/Agent/小Trae/docs/roadmap.md)。
+4. 需要参与协作时看 [CONTRIBUTING.md](file:///e:/Agent/小Trae/CONTRIBUTING.md)。
+5. 需要跟踪演进时看 [CHANGELOG.md](file:///e:/Agent/小Trae/CHANGELOG.md)。
+6. 需要维护版本或发版时看 [versioning.md](file:///e:/Agent/小Trae/docs/versioning.md)、[release-checklist.md](file:///e:/Agent/小Trae/docs/release-checklist.md) 与 [github-release-template.md](file:///e:/Agent/小Trae/docs/github-release-template.md)。

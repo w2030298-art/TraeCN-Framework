@@ -42,6 +42,12 @@
 - 写明验证方式
 - 如果涉及公开入口或目录调整，说明是否更新了文档导航
 
+## Issue 建议
+
+- 缺陷优先使用 `bug report` 模板，写清触发场景、预期行为和实际行为
+- 新需求优先使用 `feature request` 模板，说明目标用户、问题背景和期望收益
+- 如果议题已经进入版本计划，请同步参考 [roadmap.md](file:///e:/Agent/小Trae/docs/roadmap.md)
+
 ## 发版
 
 发版前请按 [release-checklist.md](file:///e:/Agent/小Trae/docs/release-checklist.md) 检查，确保版本号、更新日志、tag 和发布说明一致。
