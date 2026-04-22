@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file.
 
+## [v1.3.2] - 2026-04-22
+
+### Changed
+
+- Updated `README.md` to reflect the actual public repository entry structure.
+- Added root-directory rules so public entry files stay in the repository root and non-public artifacts stay out.
+- Updated `docs/README.md` to document the root-level placement policy for public docs and reusable modules.
+
 ## [v1.3.1] - 2026-04-22
 
 ### Added

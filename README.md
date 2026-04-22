@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.3.1-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.3.2-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 文档导航
@@ -40,6 +40,13 @@
 
 ```
 项目根目录/
+├── README.md            # 项目入口与快速开始
+├── CHANGELOG.md         # 版本变更记录
+├── docs/                # 对外公开文档
+│   ├── README.md        # 文档导航
+│   ├── architecture.md  # 公开架构说明
+│   └── versioning.md    # 版本管理说明
+│
 ├── .trae/              # 框架文件
 │   ├── rules/          # 规则（7个聚焦文件）
 │   ├── skills/         # 技能（6个内置技能）
@@ -60,6 +67,12 @@
 ├── Modules/            # 资产库（跨项目复用组件）
 └── Backup/             # 核心记忆备份
 ```
+
+## 仓库入口约束
+
+- 根目录只保留公开入口文件与一级导航，例如 `README.md`、`CHANGELOG.md`、`docs/`、`.trae/`
+- 示例配置、实验脚本和本机私有文件不放根目录
+- 对外说明统一进入 `docs/`，内部设计稿保留在 `.trae/documents/`
 
 ## 快速开始
 
@@ -136,6 +149,12 @@ AI 助手将引导你完成：
 | `06-输出规范.md` | 代码风格、对话风格 |
 
 ## 更新日志
+
+### v1.3.2 (2026-04-22)
+
+- ✅ **根目录瘦身规则**：补充仓库入口约束，明确根目录只保留公开入口文件与一级导航。
+- ✅ **目录结构同步**：README 目录树更新为当前公开仓库实际入口结构，加入 `docs/` 与 `CHANGELOG.md`。
+- ✅ **文档职责分离**：`docs/README.md` 新增根目录原则，明确公开文档、模块资产与内部设计稿的边界。
 
 ### v1.3.1 (2026-04-22)
 
