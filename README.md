@@ -2,31 +2,42 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.3.6-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.3.7-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## 文档导航
+## 这是什么
 
-- [文档总览](docs/README.md)
-- [公开架构说明](docs/architecture.md)
-- [版本管理说明](docs/versioning.md)
-- [路线图](docs/roadmap.md)
-- [发布检查清单](docs/release-checklist.md)
-- [Release 文案模板](docs/github-release-template.md)
-- [贡献指南](CONTRIBUTING.md)
-- [更新日志](CHANGELOG.md)
+这是一个面向 `Trae IDE` 的 AI 编程助手框架，用结构化记忆、Coordinator 编排和 Skill 调度，把“会话式助手”升级成“可持续协作的开发伙伴”。
+
+## 你会得到什么
+
+- **结构化记忆**：把用户偏好、项目状态、会话交接和知识沉淀拆成可维护文件
+- **Skill 调度**：把分析、设计、测试、部署等专业任务从主会话中隔离出来
+- **自愈闭环**：以“修改 -> 诊断 -> 修复 -> 验证”为默认工作流
+- **公开治理**：同时具备版本管理、贡献规范、Issue/PR/Release 模板和路线图
+
+## 从哪里开始
+
+- **首次了解**：[文档总览](docs/README.md) | [公开架构说明](docs/architecture.md)
+- **准备使用**：[快速开始](#快速开始) | [贡献指南](CONTRIBUTING.md)
+- **跟踪演进**：[路线图](docs/roadmap.md) | [更新日志](CHANGELOG.md)
+- **维护发布**：[版本管理说明](docs/versioning.md) | [发布检查清单](docs/release-checklist.md) | [Release 文案模板](docs/github-release-template.md)
+
+## 适合谁
+
+- 想给 Trae 建立长期记忆与稳定协作方式的个人开发者
+- 想把 Prompt、规则、技能和版本治理整理成可维护结构的团队
+- 想让公开仓库既能被使用，也能被持续发版和演进的维护者
 
 ## 核心理念
 
-传统方式用纯文本文件和庞大 Prompt 维护记忆和角色，存在记忆污染、多角色冲突、效率低下等问题。
+传统方式用纯文本文件和庞大 Prompt 维护记忆和角色，容易出现记忆污染、多角色冲突和维护成本上升的问题。
 
-本框架的方案：
+本框架的目标是把这些能力拆成稳定的结构层：
 
-- **结构化记忆**：Markdown 表格文件，易读、易更新、易搜索
-- **Skill 技能调度**：专业任务通过 `/指令` 触发对应 Skill，任务隔离
 - **Coordinator 模式**：主 Agent 负责任务拆解、生命周期管理和调度
-- **开放衍生**：框架是"活"的，可以自我进化
-- **感知先行 (Cascade Mode)**：2025 年主流 AI 编程新范式。实时监控 Linter 错误、终端输出和隐式意图，实现“问题未报，修复先行”的自愈闭环。
+- **开放衍生**：框架是持续演进的，而不是一次性 Prompt
+- **感知先行 (Cascade Mode)**：实时监控 Linter、终端输出和隐式意图，实现“问题未报，修复先行”
 
 ## 分层架构
 

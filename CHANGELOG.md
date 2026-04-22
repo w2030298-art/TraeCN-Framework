@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented in this file.
 
+## [v1.3.7] - 2026-04-22
+
+### Changed
+
+- Reworked the top section of `README.md` to make the public repository easier to understand on first visit.
+- Grouped entry links by purpose so usage, governance and release paths are easier to scan.
+
 ## [v1.3.6] - 2026-04-22
 
 ### Fixed
