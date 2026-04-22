@@ -4,6 +4,8 @@ All notable changes to this project are documented in this file.
 
 ## [Unreleased]
 
+## [v1.4.1] - 2026-04-23
+
 ### Added
 
 - Added built-in `视觉设计` skill so the framework can handle posters, covers, slides, illustrations and UI-oriented visual design requests as a first-class workflow.
