@@ -17,13 +17,13 @@ logs
 *.log
 
 # User-specific memory
-Core/记忆/
+/Core/记忆/
 
 # User-specific data
-Evolve/
-Builds/
-Skills/
-Backup/
+/Evolve/
+/Builds/
+/Skills/
+/Backup/
 
 # Local backups and UE bridge experiments
 Backups/
