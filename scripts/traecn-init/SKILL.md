@@ -2,7 +2,7 @@
 name: traecn-init
 description: TraeCN-Framework 全局初始化引导。在任何工作区输入 /初始化 即可自动部署 .trae/ 框架并执行标准初始化，支持 URL 导入、本地索引和无参数三种模式。
 trigger: /初始化
-version: 1.0.0
+version: 1.0.1
 ---
 
 # TraeCN-Framework 初始化引导技能
