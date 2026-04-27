@@ -25,6 +25,9 @@ logs
 /Skills/
 /Backup/
 
+# Local TraeCN config store
+.trae-configs/
+
 # Local backups and UE bridge experiments
 Backups/
 Modules/unreal-mcp/

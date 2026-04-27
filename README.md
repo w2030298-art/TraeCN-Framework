@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.4.1-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.4.2-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 这是什么
@@ -11,9 +11,9 @@
 
 ## 当前状态
 
-- **最新正式版**：`v1.4.1`
+- **最新正式版**：`v1.4.2`
 - **项目阶段**：核心闭环已补齐，进入可公开使用与维护的稳定阶段
-- **主要更新**: 引入 `视觉设计` 技能与 huashu-design 工作流，统一会话生命周期。
+- **主要更新**: 引入三种便捷初始化方式（快捷自动 / 链接导入 / 本地索引），支持在任意新工作区一键部署 `.trae/` 框架。
 
 ## 为什么值得看
 
@@ -104,26 +104,55 @@
 
 ## 快速开始
 
-### 30 秒上手
+### 15 秒上手（推荐）
 
-1. 将 `.trae/` 文件夹复制到你的项目根目录。
-2. 在 Trae IDE 中打开工作区并输入：
+1. **一次性全局安装**（每台机器只需执行一次）：
+
+```powershell
+# Windows
+irm https://raw.githubusercontent.com/qShan1/TraeCN-Framework/main/scripts/install.ps1 | iex
+
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/qShan1/TraeCN-Framework/main/scripts/install.sh | bash
+```
+
+2. **在任意新工作区输入**：
 
 ```text
 /初始化
 ```
 
-3. 按引导完成目录创建、记忆初始化和偏好配置，然后直接开始对话协作。
+AI 助手将自动部署 `.trae/` 框架、创建目录结构、初始化记忆文件，然后直接开始对话协作。
 
-如果你是第一次接入，这 3 步已经足够开始使用。
+### 三种初始化方式
+
+| 方式 | 触发格式 | 适用场景 |
+|------|----------|----------|
+| **快捷自动** | `/初始化` | 最常用。本地有缓存则直接部署，无缓存则自动从 GitHub 下载 |
+| **链接导入** | `/初始化 <url>` | 使用自定义配置源或特定版本（如 fork 的仓库） |
+| **本地索引** | `/初始化 @<索引>` | 使用本地预存的配置模板，完全离线可用 |
+
+### 传统方式（手动复制）
+
+如果你不想使用全局安装，也可以手动将 `.trae/` 文件夹复制到项目根目录，然后输入 `/初始化`。
 
 ### 详细流程
 
-#### 1. 导入框架
+#### 1. 安装全局初始化 Skill（一次性）
 
-将 `.trae/` 文件夹复制到你的项目根目录。
+运行安装脚本，将 `traecn-init` Skill 安装到 `$HOME/.trae-cn/skills/`，同时在 `$HOME/.trae-configs/` 创建默认配置模板：
 
-#### 2. 初始化
+```powershell
+# Windows（已克隆仓库）
+.\scripts\install.ps1 -Local
+
+# macOS / Linux（已克隆仓库）
+./scripts/install.sh --local
+```
+
+安装完成后，`/初始化` 将在**任意工作区**可用。
+
+#### 2. 初始化工作区
 
 在 Trae IDE 中打开工作区，在聊天框输入：
 
@@ -131,12 +160,17 @@
 /初始化
 ```
 
-AI 助手将引导你完成：
+AI 助手将自动完成：
 
-- 创建目录结构
+- 检测 `.trae/` 是否存在（不存在则自动部署）
+- 创建 `Core/记忆/` 等目录结构
 - 生成空白记忆文件
 - 配置用户偏好
 - 检查是否存在可恢复的旧会话
+
+如需从特定源初始化：
+- `/初始化 https://github.com/xxx/xxx/archive/main.zip` — 链接导入
+- `/初始化 @default` — 本地索引（离线）
 
 #### 3. 开始协作
 
@@ -209,6 +243,16 @@ AI 助手将引导你完成：
 | `06-输出规范.md` | 代码风格、对话风格 |
 
 ## 更新日志
+
+### v1.4.2 (2026-04-27)
+
+- **三种便捷初始化方式**：补齐 `.trae/` 部署环节，使 `/初始化` 成为真正的"一键启动"入口
+  - **快捷自动** (`/ initialization`)：无参数时自动从本地缓存或 GitHub 部署 `.trae/`
+  - **链接导入** (`/initialization <url>`)：支持从任意 http/https URL 下载并部署配置
+  - **本地索引** (`/initialization @<index>`)：支持从本地预存配置模板离线部署
+- **全局初始化 Skill**：新增 `traecn-init` Skill，安装后可在任意工作区触发 `/初始化`
+- **安装脚本**：提供 `scripts/install.ps1`（Windows）和 `scripts/install.sh`（macOS/Linux），一键完成全局安装
+- **配置校验清单**：新增 `.trae/configs/default-checksum.md`，部署时自动校验 `.trae/` 完整性
 
 ### v1.3.8 (2026-04-22)
 
