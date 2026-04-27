@@ -6,7 +6,8 @@
 
 param(
     [string]$SourceUrl = "https://github.com/w2030298-art/TraeCN-Framework/archive/refs/heads/main.zip",
-    [switch]$Local
+    [switch]$Local,
+    [switch]$Force
 )
 
 $ErrorActionPreference = "Stop"
@@ -30,6 +31,22 @@ if (-not (Test-Path "$env:USERPROFILE\.trae-cn")) {
     Err "ERROR: Trae CN not found at $env:USERPROFILE\.trae-cn"
     Info "Please install Trae CN first: https://www.trae.ai"
     exit 1
+}
+
+# 1.5. Check existing installation
+$ExistingSkill = "$env:USERPROFILE\.trae-cn\skills\traecn-init\SKILL.md"
+$CurrentVersion = $null
+if (Test-Path $ExistingSkill) {
+    $Lines = Get-Content $ExistingSkill -TotalCount 10
+    foreach ($line in $Lines) {
+        if ($line -match '^version:\s*(.+)$') {
+            $CurrentVersion = $Matches[1].Trim()
+            break
+        }
+    }
+    if ($CurrentVersion) {
+        Info "Detected existing installation: traecn-init $CurrentVersion"
+    }
 }
 
 # 2. Determine source
@@ -61,6 +78,32 @@ if ($Local) {
         Info "2. Download manually and use -Local flag"
         exit 1
     }
+}
+
+# 2.5. Version check
+$NewSkillFile = Join-Path $RepoRoot "scripts\traecn-init\SKILL.md"
+$NewVersion = $null
+if (Test-Path $NewSkillFile) {
+    $NewLines = Get-Content $NewSkillFile -TotalCount 10
+    foreach ($line in $NewLines) {
+        if ($line -match '^version:\s*(.+)$') {
+            $NewVersion = $Matches[1].Trim()
+            break
+        }
+    }
+}
+
+if (-not $Force -and $CurrentVersion -and $NewVersion -and $CurrentVersion -eq $NewVersion) {
+    Info ""
+    Ok "Already up to date: traecn-init $CurrentVersion"
+    Info "No update needed. Run with -Force to reinstall anyway."
+    exit 0
+} elseif ($CurrentVersion -and $NewVersion) {
+    Info ""
+    Info "Update available: $CurrentVersion -> $NewVersion"
+} elseif ($NewVersion) {
+    Info ""
+    Info "New installation: traecn-init $NewVersion"
 }
 
 # 3. Create directories
