@@ -1,14 +1,14 @@
 #!/bin/bash
 # TraeCN-Framework 全局初始化安装脚本 (macOS/Linux)
 # 用法:
-#   网络安装: curl -fsSL https://raw.githubusercontent.com/qShan1/TraeCN-Framework/main/scripts/install.sh | bash
+#   网络安装: curl -fsSL https://raw.githubusercontent.com/w2030298-art/TraeCN-Framework/main/scripts/install.sh | bash
 #   本地安装: ./scripts/install.sh --local
 #   指定源:   ./scripts/install.sh --url "https://..."
 
 set -e
 
 # 默认配置
-SOURCE_URL="https://github.com/qShan1/TraeCN-Framework/archive/refs/heads/main.zip"
+SOURCE_URL="https://github.com/w2030298-art/TraeCN-Framework/archive/refs/heads/main.zip"
 LOCAL_MODE=false
 
 # 路径定义

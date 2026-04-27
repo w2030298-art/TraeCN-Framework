@@ -109,7 +109,7 @@ version: 1.0.0
 1. **查找本地默认配置**：检查 `$env:USERPROFILE\.trae-configs\default\.trae\` 是否存在。
 2. **本地有默认配置** → 复制部署 → 执行【标准初始化】。
 3. **本地无默认配置** → 从 GitHub 官方仓库下载：
-   - 默认源：`https://github.com/qShan1/TraeCN-Framework/archive/refs/heads/main.zip`
+   - 默认源：`https://github.com/w2030298-art/TraeCN-Framework/archive/refs/heads/main.zip`
    - 下载到 `$env:TEMP\traecn-init-download.zip`
    - 解压后进入 `TraeCN-Framework-main\.trae\`
    - 复制到工作区根目录
@@ -228,5 +228,5 @@ version: 1.0.0
 - Windows 环境下使用 PowerShell 命令进行下载和解压。
 - 临时文件统一放在 `$env:TEMP\traecn-init-*` 目录下，完成后清理。
 - 本地索引根目录：`$env:USERPROFILE\.trae-configs\`
-- 默认远程源：`https://github.com/qShan1/TraeCN-Framework/archive/refs/heads/main.zip`
+- 默认远程源：`https://github.com/w2030298-art/TraeCN-Framework/archive/refs/heads/main.zip`
 - 所有路径使用绝对路径或 `$env:` 环境变量，避免相对路径歧义。

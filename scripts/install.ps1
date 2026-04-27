@@ -1,11 +1,11 @@
 ﻿# TraeCN-Framework Global Init Install Script (Windows)
 # Usage:
-#   Network: irm https://raw.githubusercontent.com/qShan1/TraeCN-Framework/main/scripts/install.ps1 | iex
+#   Network: irm https://raw.githubusercontent.com/w2030298-art/TraeCN-Framework/main/scripts/install.ps1 | iex
 #   Local:   .\scripts\install.ps1 -Local
 #   Custom:  .\scripts\install.ps1 -SourceUrl "https://..."
 
 param(
-    [string]$SourceUrl = "https://github.com/qShan1/TraeCN-Framework/archive/refs/heads/main.zip",
+    [string]$SourceUrl = "https://github.com/w2030298-art/TraeCN-Framework/archive/refs/heads/main.zip",
     [switch]$Local
 )
 

@@ -2,7 +2,7 @@
 
 > 专为 Trae IDE 打造的 AI 编程助手框架。基于本地结构化记忆、Coordinator 编排和 Skill 技能调度。
 
-[![Version](https://img.shields.io/badge/version-1.4.2-blue.svg)](https://github.com/qShan1/TraeCN-Framework)
+[![Version](https://img.shields.io/badge/version-1.4.2-blue.svg)](https://github.com/w2030298-art/TraeCN-Framework)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 这是什么
@@ -110,10 +110,10 @@
 
 ```powershell
 # Windows
-irm https://raw.githubusercontent.com/qShan1/TraeCN-Framework/main/scripts/install.ps1 | iex
+irm https://raw.githubusercontent.com/w2030298-art/TraeCN-Framework/main/scripts/install.ps1 | iex
 
 # macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/qShan1/TraeCN-Framework/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/w2030298-art/TraeCN-Framework/main/scripts/install.sh | bash
 ```
 
 2. **在任意新工作区输入**：
