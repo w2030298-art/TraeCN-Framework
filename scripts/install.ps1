@@ -1,4 +1,4 @@
-﻿# TraeCN-Framework Global Init Install Script (Windows)
+# TraeCN-Framework Global Init Install Script (Windows)
 # Usage:
 #   Network: irm https://raw.githubusercontent.com/w2030298-art/TraeCN-Framework/main/scripts/install.ps1 | iex
 #   Local:   .\scripts\install.ps1 -Local
